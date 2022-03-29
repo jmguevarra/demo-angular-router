@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+a.nav-link {
+    color: #414141;
+}
+.nav-item.active a.nav-link {
+    color: #fff;
+    background-color: cornflowerblue;
+}
