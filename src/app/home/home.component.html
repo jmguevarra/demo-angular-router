@@ -1,4 +1,13 @@
 <h4>Welcome to Server Manager 4.0</h4>
 <p>Manage your Servers and Users.</p>
 
-<button class="btn btn-primary" (click)="onLoadServer()" type="button">Load Server</button>
+<button class="btn btn-primary" (click)="onLoadServer(1)" type="button">Load Server 1</button>
+<hr>
+<h2>Notes:</h2>
+<ul class="list-group">
+    <li class="list-group-item"><b>[queryParams]</b> - one of the router directive where you can add query string parameter in the url</li>
+    <li class="list-group-item"><b>fragment</b> - a directive that helps you to add # anchor in the query sting</li>
+    <li class="list-group-item"><b>routerLink</b> - you can specify the url of the routed link that you place in appRoute in appModule.ts</li>
+    <li class="list-group-item"><b>[routerLink]</b> - directive which you can add array of options for routed Links ['url/slug', ':id', 'edit/relativeSlugURL']</li>
+    <li class="list-group-item"><b>ActivatedRoute Object - it helps you to fetch data in query string or observ any changes in the routed link</b></li>
+</ul>

@@ -4,10 +4,19 @@
       <a
         href="#"
         class="list-group-item"
-        [routerLink]="['/server', 5, 'edit']"
+        [routerLink]="['/servers', server.id]"
         *ngFor="let server of servers">
         {{ server.name }}
       </a>
+      <!-- <a
+        href="#"
+        class="list-group-item"
+        [routerLink]="['/servers', server.id]"
+        [queryParams]=" { allowEdit: 1} "
+        fragment = "loading"
+        *ngFor="let server of servers">
+        {{ server.name }}
+      </a> -->
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
